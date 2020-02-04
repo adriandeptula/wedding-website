@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('./image/image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 751px;;
+}
+
+@media (max-width: 1200px) {
+    section {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        width: 533px;
+        height: 333px;
+    }
+}
+
+@media (max-width: 533px) {
+    section {
+        width: 355px;
+        max-height: 222px;
+    }
+}
+
+@media (max-width: 355px) {
+    section {
+        width: 235;
+        max-height: 150px;
+    }
+}
+
