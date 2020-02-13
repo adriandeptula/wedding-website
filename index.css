@@ -5,10 +5,30 @@
     margin: 0;
 }
 
-body {
-    background: #a5b2a0;
-    font-family: 'Lora', Tahoma, cursive;
-    color: white;
+nav {
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1024px;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.my {
+    font-size: 100px;
 }
 
 #guests-table {
@@ -16,10 +36,8 @@ body {
 }
 
 .column-wrapper {
-    position: relative;
-    margin-top: 50%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
 }
 
@@ -43,36 +61,61 @@ img {
     height: 100%;
 }
 
-ul {
+ul#timer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
-    padding: 20px 0;
+    padding: 40px 0;
     
 }
 
-li {
-    position: relative;
-    width: 25%;
-    height: 80px;
-    background-image: url('./images/jo3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    text-align: center;
+#timer li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 32px;
+    background: linear-gradient(225deg, #ffffff, #e2e2e2);
+    box-shadow:  -12px 12px 14px #c6c6c6, 
+                 12px -12px 14px #ffffff;
 }
 
 li span {
     font-size: 30px;
-    line-height: 60px;
+    text-transform: uppercase;
 }
 
 li p {
-    padding: 10px 0;
-    font-size: 10px;
+    font-size: 20px;
     text-transform: uppercase;
+}
+
+.fwrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .2);;
+}
+
+footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: left; */
+}
+
+footer h3, footer p {
+    text-align: left;
 }
 
 @media (min-width: 320px) {
@@ -80,5 +123,7 @@ li p {
 }
 @media (max-width: 425px) {}
 @media (max-width: 768px) {}
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+
+}
 @media (max-width: 1440px) {}
