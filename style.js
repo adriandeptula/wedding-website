@@ -41,7 +41,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === hours)) {
-    document.querySelector('.timer-hours p').innerHTML = 'godziny';
+    document.querySelector('.timer-hours p').innerHTML = 'godzin';
   }
 
   else {
@@ -58,7 +58,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === mins)) {
-    document.querySelector('.timer-mins p').innerHTML = 'minuty';
+    document.querySelector('.timer-mins p').innerHTML = 'minut';
   }
 
   else {
@@ -77,7 +77,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === secs)) {
-    document.querySelector('.timer-secs p').innerHTML = 'sekundy';
+    document.querySelector('.timer-secs p').innerHTML = 'sekund';
   }
 
   else {
