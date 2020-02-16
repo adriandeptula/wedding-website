@@ -207,8 +207,7 @@ main.column-wrapper .row-container ul#timer li.timer-secs {
     display: none;;
 }
 article {
-    padding-top: 35px;
-    padding-bottom: 80px;
+    padding: 35px 15px 80px 15px;
     text-align: center;
 }
 article h3 {
