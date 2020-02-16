@@ -1,3 +1,13 @@
+const hamburger = document.querySelector('.hamburger');
+const mobile_nav = document.querySelector('.menu-mobile');
+
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  mobile_nav.classList.toggle('menu-mobile--active');
+}
+
+hamburger.addEventListener('click', handleClick);
+
 let endDate = new Date("July 04, 2020 16:00:00").getTime();
 
 let timer = setInterval(function () {

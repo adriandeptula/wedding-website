@@ -47,9 +47,7 @@ nav .hamburger-wrapper {
     border: 0;
     transition: transform 0.3s 0.1s ease-in-out, visibility 0s 0.4s;
 }
-/* .hamburger--active {
-    transform: translatex(250px);
-} */
+
 .hamburger__box {
     width: 35px;
     height: 24px;
@@ -97,9 +95,12 @@ nav .menu-mobile {
 	width: 100%;
     height: calc(100% - var(--heightMenu));
 	transition: .5s;
-	/* transform: translateX(-100%); */
-	background-color: #222;
+	transform: translateX(-100%);
+	background-color: #fff;
 	z-index: 1;
+}
+nav .menu-mobile--active {
+    transform: translateX(0);
 }
 nav .menu-mobile .menu-mobile-container {
     display: flex;
