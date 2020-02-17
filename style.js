@@ -1,4 +1,14 @@
-let endDate = new Date("February 13, 2020 17:30:00").getTime();
+const hamburger = document.querySelector('.hamburger');
+const mobile_nav = document.querySelector('.menu-mobile');
+
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  mobile_nav.classList.toggle('menu-mobile--active');
+}
+
+hamburger.addEventListener('click', handleClick);
+
+let endDate = new Date("July 04, 2020 16:00:00").getTime();
 
 let timer = setInterval(function () {
 
@@ -31,7 +41,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === hours)) {
-    document.querySelector('.timer-hours p').innerHTML = 'godziny';
+    document.querySelector('.timer-hours p').innerHTML = 'godzin';
   }
 
   else {
@@ -48,7 +58,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === mins)) {
-    document.querySelector('.timer-mins p').innerHTML = 'minuty';
+    document.querySelector('.timer-mins p').innerHTML = 'minut';
   }
 
   else {
@@ -67,7 +77,7 @@ let timer = setInterval(function () {
   }
 
   if (numbers.map(number => number === secs)) {
-    document.querySelector('.timer-secs p').innerHTML = 'sekundy';
+    document.querySelector('.timer-secs p').innerHTML = 'sekund';
   }
 
   else {

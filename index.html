@@ -10,46 +10,85 @@
 </head>
 
 <body>
+    <nav>
+        <div class="hamburger-wrapper">
+            <button class="hamburger">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile-container">
+                <ul class="menu-mobile-list">
+                    <li class='menu-mobile-list__item'><a href="./index.html">Strona główna</a></li>
+                    <li class='menu-mobile-list__item'><a href="#">Plan wydarzeń</a></li>
+                    <li class='menu-mobile-list__item'><a href="#">Ułożenie stołów</a></li>
+                    <li class='menu-mobile-list__item'><a href="#">Menu weselne</a></li>
+                    <li class='menu-mobile-list__item'><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-desktop">
+            <ul class="menu-desktop-list">
+                <li class='menu-desktop-list__item'><a href="./index.html">Strona główna</a></li>
+                <li class='menu-desktop-list__item'><a href="#">Plan wydarzeń</a></li>
+                <li class='menu-desktop-list__item'><a href="#">Ułożenie stołów</a></li>
+                <li class='menu-desktop-list__item'><a href="#">Menu weselne</a></li>
+                <li class='menu-desktop-list__item'><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="column-wrapper">
-        <h1>Pobieramy się za:</h1>
+    <header>
+        <figure><img src="./images/header_img.jpg" alt="Listki"></figure>
+        <h1>Karo &nbsp;i Adi</h1>
+    </header>
+
+    <main class="column-wrapper">
+        <h2>Pobieramy się za:</h2>
         <div class="row-container">
-            <figure>
-                <img src="./images/img-1.png" alt="">
-            </figure>
             <ul id="timer">
                 <li class="timer-days">
                     <span id="timer-days">00</span>
-                    <span class="line"></span>
                     <p>dni</p>
                 </li>
-                <p></p>
                 <li class="timer-hours">
                     <span id="timer-hours">00</span>
-                    <span class="line"></span>
-                    <p>godzin</p>
+                    <p>godz</p>
                 </li>
                 <li class="timer-mins">
                     <span id="timer-mins">00</span>
-                    <span class="line"></span>
-                    <p>minut</p>
+                    <p>min</p>
                 </li>
                 <li class="timer-secs">
                     <span id="timer-secs">00</span>
-                    <span class="line"></span>
-                    <p>sekund</p>
+                    <p>sek</p>
                 </li>
             </ul>
             <div id="guests-table">
                 <iframe src="./guests-table.html" frameborder="0"></iframe>
             </div>
-            <figure>
-                <img src="./images/img-2.png" alt="">
-            </figure>
         </div>
+    </main>
+    <article>
+        <h3>Nawet największe szczęście bez bliskich nie smakuje tak samo.</h3>
+        <p>4 | LIPCA | 2020</p>
+        <P>Świętujcie razem z nami.</P>
+    </article>
+
+    <div id="contact" class="fwrapper">
+        <footer>
+            <div>
+                <h3>Informacje kontaktowe</h3>
+                <p><i class="fas fa-phone"></i> Karolina: 727 929 536</p>
+                <p><i class="fas fa-phone"></i> Adrian: 727 932 764</p>
+            </div>
+        </footer>
     </div>
 
     <script src="./style.js"></script>
+    <script src="https://kit.fontawesome.com/ff2a2337a9.js" crossorigin="anonymous"></script>
 
 </body>
 
