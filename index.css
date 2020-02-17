@@ -47,7 +47,7 @@ nav .hamburger-wrapper {
     background-color: var(--backgroudMain);
     z-index: 2;
 }
-.hamburger {
+button.hamburger {
     padding: 10px;
     display: inline-block;
     cursor: pointer;
@@ -55,7 +55,9 @@ nav .hamburger-wrapper {
     border: 0;
     transition: transform 0.3s 0.1s ease-in-out, visibility 0s 0.4s;
 }
-
+button.hamburger:focus{
+	outline-color: transparent;
+}
 .hamburger__box {
     width: 35px;
     height: 24px;
