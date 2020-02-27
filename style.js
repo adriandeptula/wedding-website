@@ -8,12 +8,11 @@ const handleClick = () => {
 
 hamburger.addEventListener('click', handleClick);
 
-let endDate = new Date("July 04, 2020 16:00:00").getTime();
-
 let timer = setInterval(function () {
 
-  let now = new Date().getTime();
-  let t = endDate - now;
+  let endDate = new Date("July 04, 2020 16:00:00 GMT+0100");
+  let now = new Date();
+  let t = endDate.getTime() - now.getTime();;
 
   let days = Math.floor(t / (1000 * 60 * 60 * 24));
   let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -25,6 +24,7 @@ let timer = setInterval(function () {
   // days
   if (days > 0) {
     document.querySelector("#timer-days").innerHTML = days;
+    document.querySelector('.timer-days p').innerHTML = 'dni';
   }
 
   else {
@@ -32,8 +32,8 @@ let timer = setInterval(function () {
   }
 
   // hours
-  if (hours > 0) {
-    document.querySelector("#timer-hours").innerHTML = hours;
+  if (hours >= 0) {
+    document.querySelector("#timer-hours").innerHTML = ('0' + hours).slice(-2);
   }
 
   else if (days <= 0) {
@@ -49,8 +49,8 @@ let timer = setInterval(function () {
   }
 
   // mins
-  if (mins > 0) {
-    document.querySelector("#timer-mins").innerHTML = mins;
+  if (mins >= 0) {
+    document.querySelector("#timer-mins").innerHTML = ('0' + mins).slice(-2);
   }
 
   else if (days <= 0 && hours <= 0) {
@@ -66,22 +66,33 @@ let timer = setInterval(function () {
   }
 
   // secs
-  if (secs > 0) {
-    document.querySelector("#timer-secs").innerHTML = secs;
-  }
+  // if (secs > 0) {
+  //   document.querySelector("#timer-secs").innerHTML = secs;
+  // }
 
-  else if (t <= 0) {
-    clearInterval(timer);
-    document.querySelector("#timer").style.display = "none";
-    document.querySelector("#table").style.display = "block";
-  }
+  // else if (t <= 0) {
+  //   clearInterval(timer);
+  //   document.querySelector("#timer").style.display = "none";
+  //   document.querySelector("#table").style.display = "block";
+  // }
 
-  if (numbers.map(number => number === secs)) {
-    document.querySelector('.timer-secs p').innerHTML = 'sekund';
-  }
+  // if (numbers.map(number => number === secs)) {
+  //   document.querySelector('.timer-secs p').innerHTML = 'sekund';
+  // }
 
+  // else {
+  //   document.querySelector('.timer-secs p').innerHTML = 'sekund';
+  // }
+
+  //secs
+
+  if (numbers.map(n => n = secs)) {
+    document.querySelector("#timer-secs").innerHTML = ('0' + secs).slice(-2);
+    document.querySelector('.timer-secs p').innerHTML = 'sekundss';
+  }
   else {
-    document.querySelector('.timer-secs p').innerHTML = 'sekund';
+    document.querySelector("#timer-secs").innerHTML = secs;
+    document.querySelector('.timer-secs p').innerHTML = 'boruch';
   }
 
 }, 1000);
