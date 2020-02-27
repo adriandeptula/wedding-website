@@ -65,34 +65,23 @@ let timer = setInterval(function () {
     document.querySelector('.timer-mins p').innerHTML = 'minut';
   }
 
-  // secs
-  // if (secs > 0) {
-  //   document.querySelector("#timer-secs").innerHTML = secs;
-  // }
-
-  // else if (t <= 0) {
-  //   clearInterval(timer);
-  //   document.querySelector("#timer").style.display = "none";
-  //   document.querySelector("#table").style.display = "block";
-  // }
-
-  // if (numbers.map(number => number === secs)) {
-  //   document.querySelector('.timer-secs p').innerHTML = 'sekund';
-  // }
-
-  // else {
-  //   document.querySelector('.timer-secs p').innerHTML = 'sekund';
-  // }
-
-  //secs
-
-  if (numbers.map(n => n = secs)) {
-    document.querySelector("#timer-secs").innerHTML = ('0' + secs).slice(-2);
-    document.querySelector('.timer-secs p').innerHTML = 'sekundss';
-  }
-  else {
+  secs
+  if (secs > 0) {
     document.querySelector("#timer-secs").innerHTML = secs;
-    document.querySelector('.timer-secs p').innerHTML = 'boruch';
+  }
+
+  else if (t <= 0) {
+    clearInterval(timer);
+    document.querySelector("#timer").style.display = "none";
+    document.querySelector("#table").style.display = "block";
+  }
+
+  if (numbers.map(number => number === secs)) {
+    document.querySelector('.timer-secs p').innerHTML = 'sekund';
+  }
+
+  else {
+    document.querySelector('.timer-secs p').innerHTML = 'sekund';
   }
 
 }, 1000);
