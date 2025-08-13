@@ -10,7 +10,7 @@ hamburger.addEventListener('click', handleClick);
 
 let timer = setInterval(function () {
 
-  let endDate = new Date("July 04, 2020 16:00:00 GMT+0200");
+  let endDate = new Date("July 04, 2026 16:00:00 GMT+0200");
   let now = new Date();
   let t = endDate.getTime() - now.getTime();;
 
